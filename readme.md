@@ -1,8 +1,8 @@
 Version: Beta<br>
 More functions coming soon
 <h1>Downloads</h1><hr><br>
-Windows: Download <a href="">here</a> | Extract the Folder and run the first file. Important: Don't delete the associated folder.<br>
-Mac:  Download <a href="">here</a> | Extract the Folder and run the first file. Important: Don't delete the associated folder.<br>
+Windows: Download <a href="https://lnkdto.link/f9ef63">here</a> | Extract the Folder and run the first file. Important: Don't delete the associated folder.<br>
+Mac:  Download <a href="https://lnkdto.link/ff214d">here</a> | Extract the Folder and run the .app file Important: Don't delete the associated folder.<br>
 <h1>Todo</h1><hr><br>
 - Detailed readme.md<br>
 - Uploading Sourcecode<br>
