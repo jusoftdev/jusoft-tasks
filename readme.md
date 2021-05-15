@@ -10,3 +10,4 @@ Mac:  Download <a href="https://lnkdto.link/ff214d">here</a> | Extract the Folde
 - Web version<br>
 - Android / iOS support<br>
 <h1>Please remember: this is a beta!</h1><hr><br>
+</> by juhom for JuSoft
