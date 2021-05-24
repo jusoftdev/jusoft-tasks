@@ -6,7 +6,6 @@ Windows: Download <a href="https://lnkdto.link/f9ef63">here</a> | Extract the Fo
 Mac:  Download <a href="https://lnkdto.link/ff214d">here</a> | Extract the Folder and run the .app file Important: Don't delete the associated folder.<br>
 <h1>Todo</h1><hr><br>
 - Detailed readme.md<br>
-- Uploading Sourcecode<br>
 - Linux compability<br>
 - Web version<br>
 - Android / iOS support<br>
