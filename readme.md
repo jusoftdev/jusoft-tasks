@@ -5,6 +5,9 @@ Tasks is currently in a beta state.
 
 Current Version: Beta 1.1
 
+
+Made with Quasar Framework
+
 ## Features
 
 ### Finished
