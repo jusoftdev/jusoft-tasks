@@ -1,3 +1,4 @@
+<img src="https://i.imgur.com/mG2l8G7.png"/>
 
 **Please notice:**<br>
 Tasks is currently in a beta state. 
