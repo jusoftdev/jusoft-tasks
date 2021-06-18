@@ -1,5 +1,4 @@
-<script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
-
+<img src="https://i.imgur.com/zFxM3T0.gif">
 **Please notice:**<br>
 Tasks is currently in a beta state. 
 
