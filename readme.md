@@ -21,8 +21,6 @@ Made with Quasar Framework
  - Android / iOS support
 
 ## Download
-### Source
- - https://lnkdto.link/5c567c
 ### Windows
  - https://lnkdto.link/f9ef63
 ### MacOS
