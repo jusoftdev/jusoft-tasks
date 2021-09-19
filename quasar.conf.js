@@ -4,24 +4,25 @@
  */
 
 // Configuration for your app
-// https://v1.quasar.dev/quasar-cli/quasar-conf-js
+// https://quasar.dev/quasar-cli/quasar-conf-js
 
 module.exports = function (/* ctx */) {
   return {
-    // https://v1.quasar.dev/quasar-cli/supporting-ts
+    // https://quasar.dev/quasar-cli/supporting-ts
     supportTS: false,
 
-    // https://v1.quasar.dev/quasar-cli/prefetch-feature
+    // https://quasar.dev/quasar-cli/prefetch-feature
     // preFetch: true,
 
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
-    // https://v1.quasar.dev/quasar-cli/boot-files
+    // https://quasar.dev/quasar-cli/boot-files
     boot: [
-
+      'firebase',
+      'router-auth'
     ],
 
-    // https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
+    // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: [
       'app.scss'
     ],
@@ -40,7 +41,7 @@ module.exports = function (/* ctx */) {
       'material-icons', // optional, you are not bound to it
     ],
 
-    // Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
+    // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
@@ -51,7 +52,7 @@ module.exports = function (/* ctx */) {
       // Applies only if "transpile" is set to true.
       // transpileDependencies: [],
 
-      // rtl: false, // https://v1.quasar.dev/options/rtl-support
+      // rtl: false, // https://quasar.dev/options/rtl-support
       // preloadChunks: true,
       // showProgress: false,
       // gzip: true,
@@ -60,29 +61,23 @@ module.exports = function (/* ctx */) {
       // Options below are automatically set depending on the env, set them if you want to override
       // extractCSS: false,
 
-      // https://v1.quasar.dev/quasar-cli/handling-webpack
-      // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpack (/* chain */) {
-        //
+      // https://quasar.dev/quasar-cli/handling-webpack
+      extendWebpack (cfg) {
       },
     },
 
-    // Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
+    // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
       https: false,
       port: 8080,
       open: true // opens browser window automatically
     },
 
-    // https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
+    // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
     framework: {
       iconSet: 'material-icons', // Quasar icon set
       lang: 'en-us', // Quasar language pack
-      config: {
-        brand: {
-          dark: '#1d1d1d',
-        }
-      },
+      config: {},
 
       // Possible values for "importStrategy":
       // * 'auto' - (DEFAULT) Auto-import needed Quasar components & directives
@@ -97,27 +92,26 @@ module.exports = function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['Dialog', 'Notify', 'LocalStorage',
-        'SessionStorage']
+      plugins: ['Dialog', 'LocalStorage', 'Notify']
     },
 
     // animations: 'all', // --- includes all animations
-    // https://v1.quasar.dev/options/animations
-    animations: [],
+    // https://quasar.dev/options/animations
+    animations: ['zoomIn', 'zoomOut'],
 
-    // https://v1.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
+    // https://quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
       pwa: false
     },
 
-    // https://v1.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
+    // https://quasar.dev/quasar-cli/developing-pwa/configuring-pwa
     pwa: {
       workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
       workboxOptions: {}, // only for GenerateSW
       manifest: {
         name: `JuSoft Tasks`,
         short_name: `JuSoft Tasks`,
-        description: `A Quasar Framework app`,
+        description: `Manage your tasks for free from anywhere you want`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -152,22 +146,21 @@ module.exports = function (/* ctx */) {
       }
     },
 
-    // Full list of options: https://v1.quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
+    // Full list of options: https://quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
     cordova: {
       // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
     },
 
-    // Full list of options: https://v1.quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
+    // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
     capacitor: {
       hideSplashscreen: true
     },
 
-    // Full list of options: https://v1.quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
+    // Full list of options: https://quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
     electron: {
       bundler: 'packager', // 'packager' or 'builder'
 
       packager: {
-        platform: 'win32'
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
 
         // OS X / Mac App Store
@@ -186,7 +179,7 @@ module.exports = function (/* ctx */) {
         appId: 'jusoft-tasks'
       },
 
-      // More info: https://v1.quasar.dev/quasar-cli/developing-electron-apps/node-integration
+      // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
       nodeIntegration: true,
 
       extendWebpack (/* cfg */) {
