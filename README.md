@@ -1,4 +1,4 @@
-# Awesome Todo (awesome-todo-check)
+# JuSoft Tasks
 
 A Quasar Framework app
 
