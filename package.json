@@ -1,9 +1,9 @@
 {
-  "name": "awesome-todo-check",
+  "name": "jusoft-tasks",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Awesome Todo",
-  "author": "Danny Connell",
+  "description": "Manage your tasks easily in cloud",
+  "productName": "JuSoft Tasks",
+  "author": "JuSoft",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0"
