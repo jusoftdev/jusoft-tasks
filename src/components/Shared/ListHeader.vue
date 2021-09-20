@@ -1,3 +1,4 @@
+// light-dimmed
 <template>
   <q-banner
     :class="bgColor"

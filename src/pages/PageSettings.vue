@@ -57,7 +57,7 @@
         tag="label"
       >
         <q-item-section>
-          <q-item-label>Visit our website</q-item-label>
+          <q-item-label>Powered by JuSoft</q-item-label>
         </q-item-section>
         <q-item-section side >
           <q-icon name="chevron_right" />
@@ -65,12 +65,12 @@
       </q-item>
 
       <q-item
-        @click="emailUs"
+        @click="githubRepo"
         v-ripple
         tag="label"
       >
         <q-item-section>
-          <q-item-label>Email us</q-item-label>
+          <q-item-label>Github</q-item-label>
         </q-item-section>
         <q-item-section side >
           <q-icon name="chevron_right" />
@@ -108,10 +108,10 @@ export default {
   methods: {
     ...mapActions('settings', ['setShow12HourTimeFormat', 'setShowTasksInOneList']),
     visitOurWebsite() {
-      openURL('http://www.google.com')
+      openURL('https://jusoft.dev')
     },
-    emailUs() {
-      window.location.href = 'mailto:hello@awesometodo.com?subject=Awesome Todo Feedback'
+    githubRepo() {
+      openURL('https://github.com/jusoftdev/jusoft-tasks')
     }
   }
 }

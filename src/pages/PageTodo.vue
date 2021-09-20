@@ -7,27 +7,27 @@
           <search />
           <sort />
         </div>
-
+  
         <p v-if="search && !Object.keys(tasksTodo).length && !Object.keys(tasksCompleted).length">No search results.</p>
-
+  
         <q-scroll-area class="q-scroll-area-tasks">
           <no-tasks
             v-if="!Object.keys(tasksTodo).length && !search && !settings.showTasksInOneList"
           >
           </no-tasks>
-
-          <tasks-todo
+      
+          <tasks-todo 
             v-if="Object.keys(tasksTodo).length"
             :tasksTodo="tasksTodo"
           />
-
-          <tasks-completed
+      
+          <tasks-completed 
             v-if="Object.keys(tasksCompleted).length"
             :tasksCompleted="tasksCompleted"
             class="q-mb-xl"
           />
         </q-scroll-area>
-
+  
         <div class="absolute-bottom text-center q-mb-lg no-pointer-events">
           <q-btn
             @click="showAddTask = true"
@@ -64,7 +64,7 @@ export default {
     return {
       showAddTask: false
     }
-  },
+  }, 
   computed: {
     ...mapGetters('tasks', ['tasksTodo', 'tasksCompleted']),
     ...mapGetters('settings', ['settings']),
@@ -87,8 +87,8 @@ export default {
 </script>
 
 <style>
-.q-scroll-area-tasks {
-  display: flex;
-  flex-grow: 1;
-}
+  .q-scroll-area-tasks {
+    display: flex;
+    flex-grow: 1;
+  }
 </style>

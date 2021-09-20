@@ -44,7 +44,7 @@ const mutations = {
 	},
 	setSearch(state, value) {
 		state.search = value
-	},
+	},	
 	setSort(state, value) {
 		state.sort = value
 	},
@@ -123,7 +123,7 @@ const actions = {
 				showErrorMessage(error.message)
 			}
 			else {
-				Notify.create('Added Task')
+				Notify.create('Task added!')
 			}
 		})
 	},
@@ -137,7 +137,7 @@ const actions = {
 			else {
 				let keys = Object.keys(payload.updates)
 				if (!(keys.includes('completed') && keys.length === 1)) {
-					Notify.create('Updated Task')
+					Notify.create('Task updated!')
 				}
 			}
 		})
@@ -150,7 +150,7 @@ const actions = {
 				showErrorMessage(error.message)
 			}
 			else {
-				Notify.create('Deleted Task')
+				Notify.create('Task deleted!')
 			}
 		})
 	}
@@ -164,7 +164,7 @@ const getters = {
 		keysOrdered.sort((a, b) => {
 			let taskAProp = state.tasks[a][state.sort].toLowerCase(),
 					taskBProp = state.tasks[b][state.sort].toLowerCase()
-
+			
 			if (taskAProp > taskBProp) return 1
 			else if (taskAProp < taskBProp) return -1
 			else return 0

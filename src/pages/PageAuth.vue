@@ -43,8 +43,8 @@ export default {
 </script>
 
 <style>
-.auth-tabs {
-  max-width: 500px;
-  margin: 0 auto;
-}
+  .auth-tabs {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 </style>
