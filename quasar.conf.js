@@ -69,7 +69,7 @@ module.exports = function (/* ctx */) {
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
       https: false,
-      port: 8080,
+      port: 8081,
       open: true // opens browser window automatically
     },
 
@@ -111,7 +111,7 @@ module.exports = function (/* ctx */) {
       manifest: {
         name: `JuSoft Tasks`,
         short_name: `JuSoft Tasks`,
-        description: `Manage your tasks for free from anywhere you want`,
+        description: `Manage your tasks easily in the cloud`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -176,7 +176,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'jusoft-tasks'
+        appId: 'awesome-todo-check'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
