@@ -176,7 +176,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'awesome-todo-check'
+        appId: 'jusoft-tasks'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
