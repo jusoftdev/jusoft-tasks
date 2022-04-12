@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="transparent">
         <q-toolbar-title class="absolute-center">
           JuSoft Tasks
         </q-toolbar-title>
@@ -26,17 +26,17 @@
       </q-toolbar>
     </q-header>
 
-    <q-footer>
-      <q-tabs>
-        <q-route-tab
-          v-for="nav in navs"
-          :key="nav.label"
-          :to="nav.to"
-          :icon="nav.icon"
-          :label="nav.label"
-        />
-      </q-tabs>
-    </q-footer>
+<!--    <q-footer>-->
+<!--      <q-tabs>-->
+<!--        <q-route-tab-->
+<!--          v-for="nav in navs"-->
+<!--          :key="nav.label"-->
+<!--          :to="nav.to"-->
+<!--          :icon="nav.icon"-->
+<!--          :label="nav.label"-->
+<!--        />-->
+<!--      </q-tabs>-->
+<!--    </q-footer>-->
 
     <q-drawer
       v-model="leftDrawerOpen"

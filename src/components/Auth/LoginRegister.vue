@@ -5,7 +5,7 @@
         <template v-slot:avatar>
           <q-icon name="account_circle" color="primary" />
         </template>
-        {{ tab | titleCase }} to access your Todos anywhere!
+        {{ tab | titleCase }} to access JuSoft Workspace Services
       </q-banner>
     </div>
     <div class="row q-mb-md">
