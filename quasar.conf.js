@@ -115,30 +115,30 @@ module.exports = function (/* ctx */) {
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
-        theme_color: '#027be3',
+        theme_color: '#2f3542',
         icons: [
           {
-            src: 'icons/icon-128x128.png',
+            src: 'public/icons/icon-128x128.png',
             sizes: '128x128',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-192x192.png',
+            src: 'public/icons/icon-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-256x256.png',
+            src: 'public/icons/icon-256x256.png',
             sizes: '256x256',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-384x384.png',
+            src: 'public/icons/icon-384x384.png',
             sizes: '384x384',
             type: 'image/png'
           },
           {
-            src: 'icons/icon-512x512.png',
+            src: 'public/icons/icon-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           }
@@ -171,6 +171,7 @@ module.exports = function (/* ctx */) {
 
         // Windows only
         // win32metadata: { ... }
+        icon: "./src-electron/menu-icon.ico"
       },
 
       builder: {

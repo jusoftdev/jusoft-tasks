@@ -1,7 +1,7 @@
 {
   "name": "jusoft-tasks",
   "version": "0.0.1",
-  "description": "Manage your tasks easily in cloud",
+  "description": "Manage your tasks easily in the cloud",
   "productName": "JuSoft Tasks",
   "author": "JuSoft",
   "private": true,
@@ -10,16 +10,22 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "@vue/component-compiler-utils": "^3.1.2",
+    "auto-launch": "^5.0.5",
     "core-js": "^3.6.5",
     "firebase": "^8.2.3",
-    "quasar": "^1.0.0"
+    "menubar": "^9.1.1",
+    "quasar": "^1.0.0",
+    "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
     "@quasar/app": "^2.0.0",
     "devtron": "^1.4.0",
     "electron": "^9.4.4",
     "electron-debug": "^3.2.0",
-    "electron-devtools-installer": "^3.2.0"
+    "electron-devtools-installer": "^3.2.0",
+    "electron-packager": "^14.2.1",
+    "workbox-webpack-plugin": "^5.1.4"
   },
   "browserslist": [
     "last 10 Chrome versions",
